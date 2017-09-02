@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             xmlns:controls="clr-namespace:App1.CustomRenderers"
+             BackgroundColor="Green"           
+             x:Class="App1.MainPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Welcome to Xamarin Forms!" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+            <controls:ACustomEntry
+                   Placeholder="Contraseña" 
+                   TextColor="#ffffff"
+                   IsPassword="True"
+                   HeightRequest="40"                     
+                   PlaceholderColor="#ffffff" 
+                   FontSize="16"/>
+            <!--<Entry Placeholder="Nombre Usuario"                    
+                   TextColor="#ffffff"
+                   HeightRequest="40"                     
+                   PlaceholderColor="#bababa" 
+                   FontSize="16" />
+            <Entry Placeholder="Contraseña" 
+                   TextColor="#ffffff"
+                   IsPassword="True"
+                   HeightRequest="40"                     
+                   PlaceholderColor="#ffffff" 
+                   FontSize="16" />-->
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>
